@@ -7,7 +7,7 @@
  */
 use yii\widgets\ActiveForm;
 ?>
-<a href="/yii2/yii-test2/frontend/web/index.php?r=admin/add">添加员工</a>
+<a href="/yii2/yii-test2/yii2-test2/frontend/web/index.php?r=admin/add">添加员工</a>
 <form method="get">
     <input type="hidden" name="r" value="admin/find">
     <div style="border:1px solid gray; background:#eee;padding:4px;">
@@ -31,7 +31,7 @@ use yii\widgets\ActiveForm;
         <td width="10%" align='center'><?=$r['name']?></td>
         <td width="10%" align='center'><?=$r['department']?></td>
         <td width="10%" align='center'><?=$r['phone']?></td>
-        <td align='center'><button><a href="/yii2/yii-test2/frontend/web/index.php?r=admin/delete&d=<?=$r['id']?>">删除</a></button></td>
+        <td align='center'><button><a href="/yii2/yii-test2/yii2-test2/frontend/web/index.php?r=admin/delete&d=<?=$r['id']?>">删除</a></button></td>
     </tr>
     <?php endforeach; ?>
 </table>

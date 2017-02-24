@@ -21,8 +21,11 @@ class EntryForm extends Model{
     public function rules()
     {
         return [
-            [['admin', 'password','name','department','phone'], 'required'],
-            ['verifyCode','captcha'],
+            [['admin', 'password'], 'required'],
+             ['name','default','value'=>$this->name],
+             ['department','default','value'=>$this->department],
+             ['phone','default','value'=>$this->phone],
+             ['verifyCode','captcha'],
         ];
     }
 
