@@ -23,7 +23,7 @@ class AdminController extends Controller{
 
 
             if( $load && $user=='admin' && $pw=='123'&& $model->validate()){
-                return $this->redirect('index.php?r=admin/manager');
+                 $this->redirect(array('admin/manager'));
             }else{
                 return $this->render('index',['model' => $model]);
             }
